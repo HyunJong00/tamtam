@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages에서 SPA 라우팅을 처리하기 위한 리다이렉트 스크립트
+      var redirectTo = window.location.pathname.replace("/tamtam/", "") || "/";
+      window.location.href = "/tamtam" + redirectTo;
+    </script>
+  </head>
+  <body></body>
+</html>
