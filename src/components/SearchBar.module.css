@@ -1,0 +1,105 @@
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 15px 20px;
+  gap: 30px;
+  margin: 0 auto; /* 부모 요소 안에서 서치바 중앙 배치 */
+}
+
+.searchInputWrapper {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: #b8b8b8;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 20px 12px 50px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f4f4f4;
+  color: #282828;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.searchInput::placeholder {
+  color: #b8b8b8;
+}
+
+.dropdown {
+  flex-grow: 0; /* 드롭다운은 크기 고정*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.dropdownButton {
+  padding: 10px 25px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+
+.dropdownButton:hover {
+  background-color: #f0f0f0;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+  width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdownItem {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdownItem:last-child {
+  border-bottom: none;
+}
+
+.dropdownItem:hover {
+  background-color: #f8f8f8;
+}
+
+.dropdownItem:active {
+  background-color: #e8e8e8;
+}

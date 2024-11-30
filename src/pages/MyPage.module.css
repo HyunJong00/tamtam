@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "LogoFont";
+  src: url("../assets/fonts/나눔손글씨 성실체.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.myPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 20px 50px 0px 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logotitle {
+  font-family: "LogoFont";
+  font-size: 45px;
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 45px;
+  margin-top: 45px;
+}
+
+.headerLinks {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 80px;
+}
+
+.link {
+  font-size: 16px;
+  cursor: pointer;
+  color: #282828;
+}
+
+.link:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.profileImageWrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.profileImage {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cameraIcon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 35px;
+  height: 35px;
+}
+
+.fileInput {
+  display: none;
+}
+
+.nicknameContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.nickname {
+  font-size: 20px;
+  font-weight: 600;
+  color: #282828;
+  text-align: center;
+}
+
+.editNicknameIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.email {
+  font-size: 18px;
+  color: #8d8d8d;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.separator {
+  width: 100%;
+  max-width: 1300px;
+  border-bottom: 1px solid #dddddd;
+  margin: 20px 0;
+}
+
+.memorySection {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.memoryTitle {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.itineraryList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 한 행에 4개*/
+  gap: 20px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+}
+
+.noItineraries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto; /* 수평 가운데 정렬 */
+  padding: 50px 0;
+}
+
+.noItineraryImage {
+  width: 200px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.meetTamtamButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #282828;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}

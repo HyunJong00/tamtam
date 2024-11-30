@@ -1,0 +1,41 @@
+.detailedItineraryPage {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebarContainer {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.mapContainer {
+  position: relative; /* 버튼을 맵 위에 올리기 위해 상대 위치 설정 */
+  width: 100%;
+  height: 100%;
+}
+
+.confirmButton {
+  position: absolute; /* 맵 위에 버튼을 배치 */
+  bottom: 20px;
+  right: 20px;
+  z-index: 10; /* 맵보다 위에 표시되도록 설정 */
+  background-color: #ffa94f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.confirmButton:hover {
+  background-color: #ff9526;
+}

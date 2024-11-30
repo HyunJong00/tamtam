@@ -1,0 +1,115 @@
+/* 화면 레이아웃 */
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh; /* 화면 전체를 채움 */
+  position: relative;
+  padding: 20px;
+}
+
+/* 로고 고정 */
+.logoContainer {
+  position: absolute; /* 화면 좌측 상단에 고정 */
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.logotitle {
+  font-family: "LogoFont", sans-serif;
+  font-size: 24px;
+  color: #ffa94f;
+  margin: 0;
+}
+
+/* 버튼 그룹 */
+.mainButtons {
+  display: flex;
+  flex-direction: row; /* 버튼을 세로로 배치 */
+  align-items: center;
+  gap: 20px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.button {
+  font-size: 18px;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: 2px solid #ffa94f;
+  border-radius: 8px;
+  background-color: #fff;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+  text-decoration: none;
+  color: #ffa94f;
+  font-weight: bold;
+  text-align: center;
+  width: 250px;
+}
+
+.button:hover {
+  background-color: #fff2e6;
+  transform: scale(1.1);
+}
+
+/* YouTube 컨테이너 */
+.youtubeContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* 동영상 간 간격 */
+  width: 100%; /* 화면 너비에 맞춤 */
+  padding: 20px 0;
+}
+
+.youtube {
+  text-align: center;
+}
+
+.youtubeContainer::-webkit-scrollbar {
+  height: 8px;
+  background: #f1f1f1; /* 스크롤바 배경색 */
+}
+
+.youtubeContainer::-webkit-scrollbar-thumb {
+  background: #ffa94f; /* 스크롤바 색상 */
+  border-radius: 10px;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+}
+
+.profileName {
+  font-size: 18px;
+}
+
+.Header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}

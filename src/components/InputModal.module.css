@@ -1,0 +1,88 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fafafa;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.modalTitle {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.closeIcon {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.modalDescription {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #282828;
+  text-align: left;
+  width: 100%;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.deleteButton {
+  background-color: #282828;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.deleteButton:hover {
+  background-color: #444;
+}

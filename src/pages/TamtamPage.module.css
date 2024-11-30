@@ -1,0 +1,173 @@
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  background-color: #ffffff;
+  position: relative;
+  overflow-y: auto;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; /* 좌우 공간을 나눠 배치 */
+  align-items: center;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 타이틀과 초기화 버튼 간의 간격 */
+}
+
+.title {
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.resetButton {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.resetButton:hover {
+  transform: scale(1.2);
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 프로필 이미지와 닉네임 간의 간격 */
+  cursor: pointer;
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+}
+
+.profileName {
+  font-size: 18px;
+}
+
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  overflow-y: auto;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* 스크롤바 스타일 */
+.chatWindow::-webkit-scrollbar {
+  width: 10px; /* 스크롤바 너비 조절 */
+}
+
+.chatWindow::-webkit-scrollbar-track {
+  background: transparent; /* 스크롤바 트랙 배경색 투명 */
+}
+
+.chatWindow::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* 스크롤바 색상 옅게 설정 */
+  border-radius: 8px;
+}
+
+.chatWindow::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* 호버 시 스크롤바 색상 */
+}
+
+.chatWindow {
+  scrollbar-width: thin; /* Firefox용 스크롤바 얇게 */
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Firefox용 스크롤바 색상과 배경 */
+}
+
+.userBubble {
+  align-self: flex-end;
+  background-color: #ffebb4;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 70%;
+  margin: 5px 0;
+  display: inline-block;
+  border-top-right-radius: 0;
+}
+
+.userMessageContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gptMessageContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.gptBubble {
+  background-color: #ececec;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 70%;
+  display: inline-block;
+  border-top-left-radius: 0;
+}
+
+.gptProfileIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.chatInputContainer {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 20px 20px;
+  width: calc(100% - 400px);
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 15px 20px;
+  max-width: 1000px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  outline: none;
+  resize: none;
+  height: auto;
+  max-height: 80px;
+  min-height: 20px;
+  overflow-y: auto;
+}
+
+.chatInput.focused {
+  border-color: #282828;
+}
+
+.sendIcon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

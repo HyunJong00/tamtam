@@ -1,0 +1,54 @@
+.sidebarTabs {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabList {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.1s ease;
+  border-left: 1px solid #ddd;
+}
+
+.tab:first-child {
+  border-left: none;
+}
+
+.tab:hover {
+  background-color: #f0f0f0;
+}
+
+.tab.active {
+  background-color: #f0f0f0;
+  color: #282828;
+}
+
+.tabContent {
+  flex: 1;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tabContent::-webkit-scrollbar {
+  display: none;
+}

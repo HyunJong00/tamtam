@@ -1,0 +1,68 @@
+.screen{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F5F5F5;
+    overflow-y: auto;
+}
+
+.client-message{
+    background-color: #FDE56B;
+    color: #333;
+    border-radius: 12px;
+    padding: 10px 15px;
+    margin: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+.llm-message{
+    background-color: #FDE56B;
+    color: #333;
+    border-radius: 12px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-self: flex-start; 
+}
+.client-message:empty {
+    display: none;
+}
+.calendar-style{
+    display: flex;
+    flex-direction: column;
+}
+.question-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-grow: 1; /* 높이를 확장하여 차지 */
+    padding: 20px; /* padding을 사용하여 공간 확보 */
+}
+.with-whom-style{
+    display: flex;
+    justify-content: center;
+    border-radius: 99px;
+    margin: 10px;   
+}
+
+.bubble-container {
+    display: flex;
+    margin-top:auto;
+    flex-grow: 1; /* 높이를 확장하여 차지 */
+    padding: 20px; /* padding을 사용하여 공간 확보 */
+    justify-content: flex-end;
+
+  }
+  
+  .bubble {
+    background-color: #FDE56B;
+    padding: 10px 15px;
+    border-radius: 12px;
+    margin: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+  }

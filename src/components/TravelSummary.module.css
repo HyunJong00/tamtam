@@ -1,0 +1,58 @@
+.Container {
+  padding: 0;
+  overflow-y: auto;
+  height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+}
+
+.Container::-webkit-scrollbar {
+  width: 2px; /* 스크롤바 너비 */
+}
+
+.Container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15); /* 스크롤바 색상 */
+  border-radius: 8px;
+}
+
+.Container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* 호버 시 색상 */
+}
+
+.Container::-webkit-scrollbar-track {
+  background: transparent; /* 트랙 배경 투명 */
+}
+
+.itinerarySummary {
+  background-color: #e9f5db;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.highlights {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dayHighlights {
+  margin-bottom: 10px;
+}
+
+.dayHighlights h3 {
+  padding: 0px 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #282828;
+}
+
+.places {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+}

@@ -1,0 +1,102 @@
+.ChecklistContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex: 1;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer */
+}
+
+.Checklist::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.ChecklistItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+}
+
+.ChecklistItem:hover {
+  background-color: #f1f1f1;
+}
+
+.ChecklistText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #b4b4b4;
+}
+
+.RemoveButton {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.RemoveButton:hover {
+  background-color: #ff5252;
+}
+
+.AddItem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+.AddItem input {
+  flex: 1;
+  padding: 15px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.AddItem input:focus {
+  border-color: #282828;
+}
+
+.AddButton {
+  background-color: #ffa94f;
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.AddButton:hover {
+  background-color: #ff9526;
+}

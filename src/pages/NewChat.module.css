@@ -1,0 +1,345 @@
+:root {
+  --primary-bg-color: #fde56b;
+  --secondary-bg-color: #ececec;
+  --text-color: #333;
+  --border-radius: 12px;
+  --shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  position: relative;
+  overflow-y: auto;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  box-sizing: border-box;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.resetButton {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.resetButton:hover {
+  transform: scale(1.2);
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+}
+
+.profileName {
+  font-size: 18px;
+}
+
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 150px); /* 화면 높이에서 헤더와 입력창 높이를 뺀 크기 */
+  width: 100%;
+  margin: 0; /* 외부 여백 제거 */
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* 스크롤바 스타일 */
+.chatWindow::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chatWindow::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chatWindow::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.chatWindow::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.chatWindow {
+  scrollbar-width: thin; /* Firefox 스크롤바 얇게 */
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Firefox 스크롤 색상 */
+}
+
+.userBubble {
+  align-self: flex-end;
+  background-color: var(--primary-bg-color);
+  color: #000;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  max-width: 70%;
+  margin: 5px 0;
+  display: inline-block;
+  border-top-right-radius: 0;
+}
+
+.userMessageContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gptMessageContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.gptBubble {
+  background-color: var(--secondary-bg-color);
+  color: #000;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  max-width: 70%;
+  display: inline-block;
+  border-top-left-radius: 0;
+}
+
+.gptProfileIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.chatInputContainer {
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0px 20px 20px 20px;
+  width: 100%;
+  bottom: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.chatInput {
+  flex: none;
+  padding: 15px 20px;
+  width: 85%;
+  max-width: 1000px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  outline: none;
+  resize: none;
+  height: auto;
+  max-height: 80px;
+  min-height: 20px;
+  overflow-y: auto;
+}
+
+.chatInput.focused {
+  border-color: #282828;
+}
+
+.sendIcon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.questionStyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.calendarStyle {
+  display: flex;
+  flex-direction: column;
+}
+
+.llmMessage {
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  padding: 10px 15px;
+  margin: 10px 0;
+  box-shadow: var(--shadow);
+  display: inline-flex;
+  align-self: flex-start;
+}
+
+.clientMessage {
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  padding: 10px 15px;
+  margin: 20px;
+  box-shadow: var(--shadow);
+  margin-top: auto;
+}
+
+.clientMessage:empty {
+  display: none;
+}
+
+.bubbleContainer {
+  display: flex;
+  margin-top: auto;
+  flex-grow: 1;
+  padding: 20px;
+  justify-content: flex-end;
+}
+
+.bubble {
+  flex-direction: row-reverse;
+  align-self: flex-end;
+  background-color: var(--primary-bg-color);
+  color: #000;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  max-width: 70%;
+  margin: 5px;
+  display: inline-block;
+  border-top-right-radius: 0;
+}
+.confirm {
+  background-color: white;
+  color: #333;
+  border: 3px solid #ffa94f;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.leftButtonContainer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0 20px 20px;
+}
+
+.confirmButton {
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #282828;
+  background-color: #fff;
+  border: 3px solid #ffa94f;
+  border-radius: 12px;
+  border-top-left-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.confirmButton:hover {
+  background-color: #ffa94f;
+  color: #fff;
+}
+
+.greetingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.gptProfileIconLarge {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  margin-top: -80px;
+}
+
+.greetingButton {
+  background-color: #ffa94f;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm:hover {
+  background-color: #ffa94f; /* 호버 시 배경색 변경 */
+  color: white; /* 호버 시 글자색 변경 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 강조 */
+}
+
+.confirm:active {
+  background-color: #ff8a00; /* 클릭 시 더 진한 배경색 */
+  transform: translateY(0); /* 클릭 시 원래 위치 */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 줄이기 */
+}
+
+.greetingButton:hover {
+  background-color: #ff9526;
+}
+
+/* 로딩 메세지 점 3개 깜빡이는 애니메이션 */
+.dots {
+  display: inline-block;
+  font-weight: bold;
+  animation: dots 1.5s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}

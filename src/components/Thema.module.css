@@ -1,0 +1,17 @@
+.thema{
+    display: flex;
+    justify-content: center;
+    border-radius: 99px;
+    align-items: center;
+}
+.buttonStyle{
+    background-color: white;
+    color: #333;
+    border:3px solid #FFA94F;
+    border-radius: 99px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-flex; /* span 요소의 크기를 내용에 맞춤 */
+    margin-right:10px;
+}
