@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tamtam/static/css/main.e008841d.css",
-    "main.js": "/tamtam/static/js/main.b90dece9.js",
+    "main.js": "/tamtam/static/js/main.9c780d72.js",
     "static/media/나눔손글씨 성실체.ttf": "/tamtam/static/media/나눔손글씨 성실체.2b74074bed920937ac2b.ttf",
     "static/media/tamtam.svg": "/tamtam/static/media/tamtam.bbeb27b07006698d817cfc97c058e8f0.svg",
     "static/media/icon_gptprofile.png": "/tamtam/static/media/icon_gptprofile.a2e20df56c6848a9d92b.png",
@@ -12,10 +12,10 @@
     "index.html": "/tamtam/index.html",
     "static/media/icon_x.svg": "/tamtam/static/media/icon_x.70bbb72495482f117810d7dfbbde88b7.svg",
     "main.e008841d.css.map": "/tamtam/static/css/main.e008841d.css.map",
-    "main.b90dece9.js.map": "/tamtam/static/js/main.b90dece9.js.map"
+    "main.9c780d72.js.map": "/tamtam/static/js/main.9c780d72.js.map"
   },
   "entrypoints": [
     "static/css/main.e008841d.css",
-    "static/js/main.b90dece9.js"
+    "static/js/main.9c780d72.js"
   ]
 }
