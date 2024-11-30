@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "친구와 함께 떠나는 3박 4일 제주 여행",
+    "tags": "우정, 힐링, 휴가",
+    "date": "2024.01.19",
+    "imageUrl": "/mockdata/img_example.jpg"
+  },
+  {
+    "id": 2,
+    "title": "가족과 함께 하는 제주도 문화 탐방",
+    "tags": "가족여행, 문화탐방",
+    "date": "2024.09.05",
+    "imageUrl": "/mockdata/img_example.jpg"
+  },
+  {
+    "id": 3,
+    "title": "연인과 함께 떠나는 낭만적인 제주 여행",
+    "tags": "커플, 해변",
+    "date": "2024.03.10",
+    "imageUrl": "/mockdata/img_example.jpg"
+  },
+  {
+    "id": 4,
+    "title": "여유로운 혼자만의 제주 2박 3일 여행",
+    "tags": "혼자여행, 힐링, 맛집",
+    "date": "2024.04.25",
+    "imageUrl": "/mockdata/img_example.jpg"
+  },
+  {
+    "id": 5,
+    "title": "힐링을 위한 제주 자연 탐방 여행",
+    "tags": "자연, 힐링",
+    "date": "2024.11.15",
+    "imageUrl": "/mockdata/img_example.jpg"
+  },
+  {
+    "id": 6,
+    "title": "제주 올레길 걷기와 맛집 탐방",
+    "tags": "올레길, 건강, 맛집",
+    "date": "2024.12.05",
+    "imageUrl": "/mockdata/img_example.jpg"
+  },
+  {
+    "id": 7,
+    "title": "제주 해녀 문화 체험 여행",
+    "tags": "해녀, 전통문화",
+    "date": "2024.12.20",
+    "imageUrl": "/mockdata/img_example.jpg"
+  },
+  {
+    "id": 8,
+    "title": "제주 동백꽃 축제와 카페 투어",
+    "tags": "연인과, 동백꽃, 카페",
+    "date": "2025.01.10",
+    "imageUrl": "/mockdata/img_example.jpg"
+  },
+  {
+    "id": 9,
+    "title": "아이들과 함께하는 제주도 테마파크 여행",
+    "tags": "가족여행, 테마파크",
+    "date": "2025.02.15",
+    "imageUrl": "/mockdata/img_example.jpg"
+  }
+]
