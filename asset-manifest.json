@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a5cbea2.css",
-    "main.js": "/static/js/main.50645187.js",
-    "static/media/나눔손글씨 성실체.ttf": "/static/media/나눔손글씨 성실체.2b74074bed920937ac2b.ttf",
-    "static/media/tamtam.svg": "/static/media/tamtam.bbeb27b07006698d817cfc97c058e8f0.svg",
-    "static/media/icon_gptprofile.png": "/static/media/icon_gptprofile.a2e20df56c6848a9d92b.png",
-    "static/media/logo.svg": "/static/media/logo.235009858749b29e1ea59f057a2b978e.svg",
-    "static/media/icon_userprofile.png": "/static/media/icon_userprofile.fe4f9d108a88d998770c.png",
-    "static/media/icon_search.svg": "/static/media/icon_search.9e832da1dfd4c881ee820914811496c3.svg",
-    "static/media/kakao_logo.svg": "/static/media/kakao_logo.ef797682ef33a681b30032cd4ab85f81.svg",
-    "index.html": "/index.html",
-    "static/media/icon_x.svg": "/static/media/icon_x.70bbb72495482f117810d7dfbbde88b7.svg",
-    "main.3a5cbea2.css.map": "/static/css/main.3a5cbea2.css.map",
-    "main.50645187.js.map": "/static/js/main.50645187.js.map"
+    "main.css": "/src/static/css/main.6d0e48d0.css",
+    "main.js": "/src/static/js/main.fbe5191f.js",
+    "static/media/나눔손글씨 성실체.ttf": "/src/static/media/나눔손글씨 성실체.2b74074bed920937ac2b.ttf",
+    "static/media/tamtam.svg": "/src/static/media/tamtam.bbeb27b07006698d817cfc97c058e8f0.svg",
+    "static/media/icon_gptprofile.png": "/src/static/media/icon_gptprofile.a2e20df56c6848a9d92b.png",
+    "static/media/logo.svg": "/src/static/media/logo.235009858749b29e1ea59f057a2b978e.svg",
+    "static/media/icon_userprofile.png": "/src/static/media/icon_userprofile.fe4f9d108a88d998770c.png",
+    "static/media/icon_search.svg": "/src/static/media/icon_search.9e832da1dfd4c881ee820914811496c3.svg",
+    "static/media/kakao_logo.svg": "/src/static/media/kakao_logo.ef797682ef33a681b30032cd4ab85f81.svg",
+    "index.html": "/src/index.html",
+    "static/media/icon_x.svg": "/src/static/media/icon_x.70bbb72495482f117810d7dfbbde88b7.svg",
+    "main.6d0e48d0.css.map": "/src/static/css/main.6d0e48d0.css.map",
+    "main.fbe5191f.js.map": "/src/static/js/main.fbe5191f.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a5cbea2.css",
-    "static/js/main.50645187.js"
+    "static/css/main.6d0e48d0.css",
+    "static/js/main.fbe5191f.js"
   ]
 }
